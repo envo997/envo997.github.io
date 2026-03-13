@@ -1,3 +1,97 @@
 body {
-  background-color: #ecfbe6;
+  background-color: #c0c0c0;
+  background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+  color: #000;
+  font-family: "Courier New", monospace;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header {
+  background: #000080;
+  color: #fff;
+  padding: 10px;
+  border: 4px outset #fff;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0 auto;
+}
+
+.main {
+  max-width: 800px;
+  width: 90%;
+  background: #fff;
+  border: 4px inset #fff;
+  padding: 40px;
+  margin-right: 10px;
+  margin-top: 20px;
+
+}
+
+table {
+  width: auto;
+  border: 5px solid red;
+  background: yellow;
+  transform: rotate(-2deg);
+  margin: 40px auto;
+}
+
+table tr, table td, table th {
+  display: block;
+  border: none;
+  text-align: center;
+}
+
+th {
+  font-size: 2rem;
+  color: red;
+  text-decoration: underline;
+}
+
+td {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 0;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #000080;
+  display: inline-block;
+}
+
+img {
+  filter: grayscale(1) contrast(2);
+  border: 10px solid #000;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+footer {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid black;
+  width: 100%;
+  padding: 10px;
 }

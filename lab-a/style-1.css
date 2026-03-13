@@ -1,3 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;600&display=swap');
+
 body {
-  background-color: #dfecff;
+  background: #020205;
+  background-image: radial-gradient(circle at center, #0a1f25 0%, #020205 100%);
+  color: #00f2ff;
+  font-family: 'Rajdhani', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  text-shadow: 0 0 20px #00f2ff;
+  margin: 0;
+}
+
+.main {
+  max-width: 800px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid #00f2ff;
+  border-radius: 40px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(0, 242, 255, 0.1);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #ff00ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  border-bottom: 2px solid #00f2ff;
+  padding: 15px;
+  color: #ff00ff;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(0, 242, 255, 0.2);
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00f2ff;
+  margin: 20px 0;
+}
+
+footer {
+  padding: 40px;
+  color: #ff00ff;
+  font-family: 'Orbitron', sans-serif;
 }
