@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Damian Walczak (57938) - PTW LAB C</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-image@0.4.0/leaflet-image.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+<div class="naglowek">
+    <div class="mapa-sekcja">
+        <div id="mapa"></div>
+        <div class="buttons">
+            <button id="getLocation">znajdz lokalizacje</button>
+            <button id="saveMap">zapisz obraz mapy</button>
+        </div>
+    </div>
+    <div id="puzzle-board"></div>
+</div>
+
+<div id="puzle"></div>
+
+<canvas id="offscreen-canvas" width="600" height="600" style="display:none;"></canvas>
+<div id="custom-alert">
+    essa! puzle ulozone
+</div>
+
+</body>
+</html>
