@@ -44,3 +44,5 @@ class CsvEncoder implements EncoderInterface {
         return trim($res);
     }
 }
+
+#x
