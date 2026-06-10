@@ -1,0 +1,26 @@
+<% title = 'Książki' %>
+<% bodyClass = 'index' %>
+
+<h1>Książki</h1>
+
+<ul class="action-list">
+  <li><a href="/books/new">Dodaj książkę</a></li>
+</ul>
+
+<ul class="index-list">
+  <% books.forEach(book => { %>
+  <li>
+    <h3><a href="/books/<%= book.id %>"><%= book.title %></a></h3>
+    <p><%= book.author %></p>
+    <ul class="action-list">
+      <li><a href="/books/<%= book.id %>">Podgląd</a></li>
+      <li><a href="/books/<%= book.id %>/edit">Edytuj</a></li>
+      <li>
+        <form method="POST" action="/books/<%= book.id %>/delete" style="display:inline">
+          <button type="submit" onclick="return confirm('Na pewno usunąć?')">Usuń</button>
+        </form>
+      </li>
+    </ul>
+  </li>
+  <% }) %>
+</ul>
